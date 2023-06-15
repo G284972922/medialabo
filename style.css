@@ -5,3 +5,25 @@ h2{
 body{
     background-color: #ffefaf;
 }
+div.zentai {
+    display: flex;          /* フレックスボックスにする */
+    flex-direction: row;    /* 横向きに表示（column に変更すると縦向きに表示） */
+
+    width: 500px;
+    border: 1px solid gray;
+    padding: 5px 5px 5px 0;
+}
+
+div.long {
+    flex: 2;           
+
+    background-color: cyan;
+    margin-left: 5px;
+}
+
+div.short {
+    flex: 1;             
+
+    background-color: orange;
+    margin-left: 5px;
+}
