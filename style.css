@@ -5,7 +5,7 @@ h2{
 body{
     background-color: #ffefaf;
 }
-div.zentai {
+div#zentai {
     display: flex;          /* フレックスボックスにする */
     flex-direction: row;    /* 横向きに表示（column に変更すると縦向きに表示） */
 
@@ -14,14 +14,14 @@ div.zentai {
     padding: 5px 5px 5px 0;
 }
 
-div.long {
+div#long {
     flex: 2;                /* 横幅2で表示 */
 
     background-color: cyan;
     margin-left: 5px;
 }
 
-div.short {
+div#short {
     flex: 1;                /* 横幅1で表示 */
 
     background-color: orange;
