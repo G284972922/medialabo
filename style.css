@@ -6,8 +6,8 @@ body{
     background-color: #ffefaf;
 }
 div.zentai {
-    display: flex;      
-    flex-direction: row;    
+    display: flex;          /* フレックスボックスにする */
+    flex-direction: row;    /* 横向きに表示（column に変更すると縦向きに表示） */
 
     width: 500px;
     border: 1px solid gray;
@@ -15,14 +15,14 @@ div.zentai {
 }
 
 div.long {
-    flex: 2;           
+    flex: 2;                /* 横幅2で表示 */
 
     background-color: cyan;
     margin-left: 5px;
 }
 
 div.short {
-    flex: 1;             
+    flex: 1;                /* 横幅1で表示 */
 
     background-color: orange;
     margin-left: 5px;
