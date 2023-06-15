@@ -10,8 +10,8 @@ div#zentai {
     flex-direction: row;    /* 横向きに表示（column に変更すると縦向きに表示） */
 
     width: 1000px;
-    border: 1px solid gray;
-    padding: 5px 5px 5px 0;
+    border: 5px solid gray;
+    padding: 10px 10px 10px 0;
 }
 
 div#long {
