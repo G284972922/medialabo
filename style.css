@@ -9,7 +9,7 @@ div#zentai {
     display: flex;          /* フレックスボックスにする */
     flex-direction: row;    /* 横向きに表示（column に変更すると縦向きに表示） */
 
-    width: 1000px;
+    width: 800px;
     border: 5px solid gray;
     padding: 10px 10px 10px 0;
 }
