@@ -22,11 +22,10 @@ function hantei() {
   // 課題3-1における出力先はコンソール
     kaisu=kaisu+1;
     console.log(kaisu+'回目の予想:'+yoso);
+    }
     if(kaisu<3){
-
         if(yoso===kotae){
             console.log('正解です。おめでとう!');
-            let seikai=1;
         }else if(yoso<kotae){
             console.log('まちがい．答えはもっと大きいですよ');
         }else if(yoso>kotae){
@@ -37,7 +36,7 @@ function hantei() {
 
         if(yoso===kotae){
             console.log('正解です。おめでとう!');
-            let seikai=1;
+            kaisu=kaisu+3;
         }else{
             console.log("まちがい．残念でした答えは"+kotae+"です．");
         }
