@@ -43,6 +43,6 @@ function hantei() {
         }
 
     }else if(kaisu>3){
-        console,log("答えは"+kotae+"でした．すでにゲームは終わっています");
+        console.log("答えは"+kotae+"でした．すでにゲームは終わっています");
     }
 }
