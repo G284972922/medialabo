@@ -20,8 +20,20 @@ function hantei() {
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
+    
     kaisu=kaisu+1;
-    console.log(kaisu+'回目の予想:'+yoso);
+    //console.log(kaisu+'回目の予想:'+yoso);
+
+    let answer= document.createElement('span');
+    
+    answer.textContent= yoso;
+
+    let p1 = document.createElement('p'); 
+    p1.textContent =kaisu+'回目の予想: '+yoso;
+
+    let Re=document.querySelector('p#result');
+    Re.insertAdjacentElement('beforeend', p1);
+
     }
     if(kaisu<3){
         if(yoso===kotae){
@@ -44,4 +56,3 @@ function hantei() {
     }else if(kaisu>3){
         console.log("答えは"+kotae+"でした．すでにゲームは終わっています");
     }
-}
