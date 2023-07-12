@@ -35,15 +35,16 @@ function hantei() {
 
     if(kaisu<3){
         if(yoso===kotae){
-            let p1 = document.createElement('div'); 
+            let p1 = document.createElement('p'); 
             p1.textContent ='正解です。おめでとう!';
+            kaisu=kaisu+3;
             Re.insertAdjacentElement('beforeend', p1);
         }else if(yoso<kotae){
-            let p1 = document.createElement('div'); 
+            let p1 = document.createElement('p'); 
             p1.textContent ='まちがい．答えはもっと大きいですよ';
             Re.insertAdjacentElement('beforeend', p1);
         }else if(yoso>kotae){
-            let p1 = document.createElement('div'); 
+            let p1 = document.createElement('p'); 
             p1.textContent ='まちがい．答えはもっと小さいですよ';
             Re.insertAdjacentElement('beforeend', p1);
         }
@@ -51,18 +52,18 @@ function hantei() {
     }else if(kaisu===3){
 
         if(yoso===kotae){
-            let p1 = document.createElement('div'); 
+            let p1 = document.createElement('p'); 
             p1.textContent ='正解です。おめでとう!';
             Re.insertAdjacentElement('beforeend', p1);
             kaisu=kaisu+3;
         }else{
-            let p1 = document.createElement('div'); 
+            let p1 = document.createElement('p'); 
             p1.textContent ='まちがい．残念でした答えは'+kotae+'です．';
             Re.insertAdjacentElement('beforeend', p1);
         }
 
     }else if(kaisu>3){
-        let p1 = document.createElement('div'); 
+        let p1 = document.createElement('p'); 
         p1.textContent ='答えは'+kotae+'でした．すでにゲームは終わっています';
         Re.insertAdjacentElement('beforeend', p1);
     }

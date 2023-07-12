@@ -53,3 +53,41 @@ let data = {
   console.log(data.wind.speed);
   console.log(data.wind.deg);
   console.log(data.name);
+
+  let Re=document.querySelector('div#result');
+  let p1 = document.createElement('p'); 
+  p1.textContent =data.coord.lon;
+  Re.insertAdjacentElement('beforeend', p1);
+
+  let p2 = document.createElement('p'); 
+  p2.textContent =data.coord.lat;
+  Re.insertAdjacentElement('beforeend', p2);
+
+  let p3 = document.createElement('p'); 
+  p3.textContent =data.weather[0].description;
+  Re.insertAdjacentElement('beforeend', p3);
+  
+  let p4 = document.createElement('p'); 
+  p4.textContent =data.main.temp_min;
+  Re.insertAdjacentElement('beforeend', p4);
+  
+  let p5 = document.createElement('p'); 
+  p5.textContent =data.wind.speed;
+  Re.insertAdjacentElement('beforeend', p5);
+
+  let p6 = document.createElement('p'); 
+  p6.textContent =data.wind.deg;
+  Re.insertAdjacentElement('beforeend', p6);
+
+  let p7 = document.createElement('p'); 
+  p7.textContent =data.name;
+  Re.insertAdjacentElement('beforeend', p7);
+
+  let a = document.querySelector('#serchBotton');
+  a.addEventListener('click',serch );
+
+  function serch() {
+    let x = document.querySelector('input[name="KensakuWord"]');
+    let y =x.value;
+    let z = document.querySelector(y);
+  }
