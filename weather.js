@@ -36,11 +36,23 @@ function showResult(resp) {
   let Re=document.querySelector('div#result');
   Re.innerHTML = ''; // 既存の検索結果をクリア
 
-  let p1 = document.createElement('p'); 
-  p1.textContent ="緯度 :"+data.coord.lon;
-  Re.insertAdjacentElement('beforeend', p1);
+  let s1=document.querySelector('td#d1');
+  s1.textContent=data.coord.lon;
+  let s2=document.querySelector('td#d2');
+  s2.textContent=data.coord.lat;
+  let s3=document.querySelector('td#d3');
+  s3.textContent=data.weather[0].description;
+  let s4=document.querySelector('td#d4');
+  s4.textContent=data.main.temp_min;
+  let s5=document.querySelector('td#d5');
+  s5.textContent=data.wind.speed;
+  let s6=document.querySelector('td#d6');
+  s6.textContent=data.wind.deg;
+  let s7=document.querySelector('td#d7');
+  s7.textContent=data.name;
 
-  let p2 = document.createElement('p'); 
+
+  /*let p2 = document.createElement('p'); 
   p2.textContent ="経度 :"+data.coord.lat;
   Re.insertAdjacentElement('beforeend', p2);
 
@@ -57,12 +69,12 @@ function showResult(resp) {
   Re.insertAdjacentElement('beforeend', p5);
 
   let p6 = document.createElement('p'); 
-  p6.textContent ="風向き :"+data.wind.deg;
+  p6.textContent ="風向き: " + data.wind.deg;
   Re.insertAdjacentElement('beforeend', p6);
-
+  
   let p7 = document.createElement('p'); 
-  p7.textContent ="都市名 :"+data.name;
-  Re.insertAdjacentElement('beforeend', p7);
+  p7.textContent ="都市名: " + data.name;
+  Re.insertAdjacentElement('beforeend', p7);*/
 
   // data が文字列型なら，オブジェクトに変換する
   if (typeof data === 'string') {

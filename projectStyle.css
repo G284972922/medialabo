@@ -2,6 +2,14 @@ th,td{
     border:1px #333 solid;
 }
 
+h2{
+    background-color: white;
+}
+
 radiocss {
     background-color: cyan;
+    color: #3f3faf;
+}
+body{
+    background-color: #ffefaf;
 }
