@@ -5,11 +5,46 @@
     <title>project</title>
     <link rel="stylesheet" href="projectStyle.css">
     <script src="weather.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
   </head>
   <body>
     <h2>
       世界の天気（検索結果1件）
     </h2>
+    <div>
+      <h2>どこの天気が気になる？</h2>
+      <p class="radiocss">
+          <input type="radio" name="where" id="360630">
+          <label for="Cairo">カイロ</label>
+          <input type="radio" name="where" id="524901">
+          <label for="Moscow">モスクワ</label>
+          <input type="radio" name="where" id="993800">
+          <label for="Johannesburg">ヨハネスブルク</label>
+          <input type="radio" name="where" id="1816670">
+          <label for="Beijing">北京</label>
+          <input type="radio" name="where" id="1850147">
+          <label for="Cairo">東京</label>
+          <input type="radio" name="where" id="1880252">
+          <label for="Moscow">シンガポール</label>
+      </p>
+      <p class="radiocss">    
+          <input type="radio" name="where" id="2147714">
+          <label for="Johannesburg">シドニー</label>
+          <input type="radio" name="where" id="2643743">
+          <label for="Beijing">ロンドン</label>
+          <input type="radio" name="where" id="2968815">
+          <label for="Cairo">パリ</label>
+          <input type="radio" name="where" id="3451189">
+          <label for="Moscow">リオデジャネイロ</label>
+          <input type="radio" name="where" id="5128581">
+          <label for="Johannesburg">ニューヨーク</label>
+          <input type="radio" name="where" id="5368361">
+          <label for="Beijing">ロサンゼルス</label>
+      </p>
+      <label for="kensakumado">気になる場所を選んで検索しましょう:</label>
+      <button id="serchBotton">調べる</button>
+    </div>
+    <div id="result"></div>
   <table>
     <tr>
       <th>項目</th>
@@ -17,38 +52,32 @@
     </tr>
     <tr>
       <td>緯度:</td>
-      <td> 116.3972</td>
+      <td id="1dan"> 116.3972</td>
     </tr>
     <tr>
       <td>経度:</td>
-      <td> 39.9075</td>
+      <td id="2dan"> 39.9075</td>
     </tr>
     <tr>
       <td>天気:</td>
-      <td> 曇りがち</td>
+      <td id="3dan"> 曇りがち</td>
     </tr>
     <tr>
       <td>最低気温:</td>
-      <td> 9.94</td>
+      <td id="4dan"> 9.94</td>
     </tr>
     <tr>
       <td>風速:</td>
-      <td> 2.65</td>
+      <td id="5dan"> 2.65</td>
     </tr>
     <tr>
       <td>風向き:</td>
-      <td> 197</td>
+      <td id="6dan"> 197</td>
     </tr>
     <tr>
       <td>都市名:</td>
-      <td> 北京市</td>
+      <td id="7dan"> 北京市</td>
     </tr>
   </table>
-  <div id="result"></div>
-  <div>
-    <label for="kensakumado">欲しいデータを検索しましょう:</label>
-    <input type="text" name="KensakuWord" size="10">
-    <button id="serchBotton">調べる</button>
-  </div>
   </body>
   </html>
