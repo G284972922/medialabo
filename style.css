@@ -2,6 +2,10 @@ h2{
     color: #3f3faf;
     background: linear-gradient(to right, white, #ffefaf);
 }
+h3{
+    background-color: #3f3faf;
+    color: white;
+}
 body{
     background-color: #ffefaf;
 }
@@ -15,15 +19,22 @@ div#zentai {
 }
 
 div#long {
-    flex: 2;                /* 横幅2で表示 */
+    flex: 1;                /* 横幅2で表示 */
 
     background-color: cyan;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 div#short {
-    flex: 2;                /* 横幅1で表示 */
+    flex: 1;                /* 横幅1で表示 */
 
     background-color: orange;
-    margin-left: 5px;
+    margin-left: 20px;
+}
+
+.webc{
+    color: blue;
+}
+.red{
+    color: red;
 }
